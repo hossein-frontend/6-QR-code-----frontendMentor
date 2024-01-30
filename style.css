@@ -1,0 +1,72 @@
+/* -------------------------------------------------------------------------- */
+/*                                  CSS RESET                                 */
+/* -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* -------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  /* to convert defualt browser 16px to 10px  10/16 = 0.62.5 */
+  font-size: 62.5%;
+}
+
+img {
+  /* to fix overflow and cover all container and responsive */
+  display: block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: var(--br-radius);
+}
+
+body {
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+  line-height: 1.5;
+  background-color: var(--clr-tint-grey);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-weight: var(--ft-weight-regular);
+}
+h2 {
+  font-weight: var(--ft-weight-bold);
+  color: var(--clr-dark-blue);
+  line-height: 1.4;
+}
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-tint-grey: hsl(212, 45%, 89%);
+  --clr-shade-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+  /* -------------------------------------------------------------------------- */
+  --ft-weight-regular: 400;
+  --ft-weight-bold: 700;
+  --br-radius: 10px;
+}
+
+/* ---------------------------- END OF CSS RESET ---------------------------- */
+
+.card {
+  width: 300px;
+  margin: auto;
+  background-color: var(--clr-white);
+  display: grid;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: calc(var(--br-radius) * 2);
+}
+
+figcaption {
+  padding: 1rem;
+  color: var(--clr-shade-blue);
+  line-height: 1.3;
+}
