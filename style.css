@@ -37,11 +37,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: var(--ft-weight-regular);
 }
-h2 {
-  font-weight: var(--ft-weight-bold);
-  color: var(--clr-dark-blue);
-  line-height: 1.4;
-}
+
 :root {
   --clr-white: hsl(0, 0%, 100%);
   --clr-tint-grey: hsl(212, 45%, 89%);
@@ -65,8 +61,13 @@ h2 {
   border-radius: calc(var(--br-radius) * 2);
 }
 
-figcaption {
+.card__description {
   padding: 1rem;
   color: var(--clr-shade-blue);
   line-height: 1.3;
+}
+.headling-2 {
+  font-weight: var(--ft-weight-bold);
+  color: var(--clr-dark-blue);
+  line-height: 1.4;
 }
